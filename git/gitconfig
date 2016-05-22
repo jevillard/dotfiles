@@ -1,0 +1,26 @@
+[user]
+    name = Jérémy Villard
+    email = villard.je@gmail.com
+
+[github]
+    user = jevillard
+
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+
+[branch]
+    autosetuprebas = always
+
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+
+[color]
+    ui = true
+
+[diff]
+    tool = vimdiff
+
+[push]
+default = simple
