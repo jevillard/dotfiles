@@ -7,6 +7,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export PATH="/home/jevillard/bin:/home/jevillard/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
+# Vim configuration
+stty -ixon
+
 # Aliases
 alias ll="ls -alF  --color=auto"
 alias zshconfig="vim ~/.zshrc"
