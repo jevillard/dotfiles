@@ -15,7 +15,7 @@ explain "Backup old configuration"
         tell cp $HOME/.gitignore $BASEDIR/_backup/.gitignore
     fi
     if [ -f "$HOME/.vimrc" ];then
-        tell cp $HOME/.virmrc $BASEDIR/_backup/.vimrc
+        tell cp $HOME/.vimrc $BASEDIR/_backup/.vimrc
     fi
     if [ -f "$HOME/.zshrc" ];then
         tell cp $HOME/.zshrc $BASEDIR/_backup/.zshrc
