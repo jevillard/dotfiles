@@ -8,10 +8,18 @@ explain "Backup old configuration"
         tell rm -rf $BASEDIR/_backup
     fi
     tell mkdir $BASEDIR/_backup
-    tell cp $HOME/.gitconfig $BASEDIR/_backup/.gitconfig
-    tell cp $HOME/.gitignore $BASEDIR/_backup/.gitignore
-    tell cp $HOME/.vimrc $BASEDIR/_backup/.vimrc
-    tell cp $HOME/.zshrc $BASEDIR/_backup/.zshrc
+    if [ -f "$HOME/.gitconfig" ];then
+        tell cp $HOME/.gitconfig $BASEDIR/_backup/.gitconfig
+    fi
+    if [ -f "$HOME/.gitignore" ];then
+        tell cp $HOME/.gitignore $BASEDIR/_backup/.gitignore
+    fi
+    if [ -f "$HOME/.vimrc" ];then
+        tell cp $HOME/.virmrc $BASEDIR/_backup/.vimrc
+    fi
+    if [ -f "$HOME/.zshrc" ];then
+        tell cp $HOME/.zshrc $BASEDIR/_backup/.zshrc
+    fi
 
 explain "Update +  upgrade + clean system"
     tell sudo apt-get update && sudo apt-get -y -d dist-upgrade && sudo apt-get -y autoclean && sudo apt-get -y autoremove
@@ -28,7 +36,7 @@ explain "Terminal applications"
     tell ./$BASEDIR/bin/zsh.sh
 
 explain "Development applications"
-    tell ./$BASEDIR/bin/php.sh
+    #tell ./$BASEDIR/bin/php.sh
     tell ./$BASEDIR/bin/composer.sh
     tell ./$BASEDIR/bin/symfony.sh
 
