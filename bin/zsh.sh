@@ -5,7 +5,7 @@ BASEDIR=$(dirname $0)
 
 explain "Zsh installation"
     tell sudo apt-get install -y zsh
-#    tell chsh -s /bin/zsh
+    tell chsh -s /bin/zsh
 
 explain "OhMyZsh installation"
     if [ -d "$HOME/.oh-my-zsh/" ];then
