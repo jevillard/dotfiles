@@ -37,6 +37,7 @@ explain "Terminal applications"
 
 explain "Development applications"
     tell ./$BASEDIR/bin/php.sh
+    tell ./$BASEDIR/bin/mysql.sh
     tell ./$BASEDIR/bin/composer.sh
     tell ./$BASEDIR/bin/symfony.sh
 
