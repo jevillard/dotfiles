@@ -10,5 +10,8 @@ explain "NodeJS 6x installation"
 explain "Global Gulp installation"
     tell sudo npm install -g gulp
 
+explain "Global Grunt installation"
+    tell sudo npm install -g grunt
+
 explain "Global Bower installation"
     tell sudo npm install -g bower
