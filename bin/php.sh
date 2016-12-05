@@ -7,4 +7,4 @@ explain "PHP installation"
     tell sudo apt-get install -y python-software-properties
     tell sudo add-apt-repository ppa:ondrej/php
     tell sudo apt-get update
-    tell sudo apt-get install -y php7.0 php7.0-cli php7.0-intl php7.0-curl php7.0-gd php7.0-mysql
+    tell sudo apt-get install -y php7.1 php7.1-cli php7.1-intl php7.1-curl php7.1-gd php7.1-mysql
