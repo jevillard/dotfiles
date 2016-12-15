@@ -30,6 +30,7 @@ explain "Change permission of files"
 explain "Tools applications"
     tell ./$BASEDIR/bin/tools.sh
     tell ./$BASEDIR/bin/nodejs.sh
+    tell ./$BASEDIR/bin/docker.sh
 
 explain "Terminal applications"
     tell ./$BASEDIR/bin/vim.sh

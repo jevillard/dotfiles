@@ -1,11 +1,11 @@
 # ZSH Configuration
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pure"
-plugins=(bower, composer, git, npm, symfony2)
+plugins=(bower, composer, docker, git, npm, symfony2)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="/home/jevillard/bin:/home/jevillard/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/home/jevillard/bin:/home/jevillard/.composer/vendor/bin:/home/jevillard/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 # Vim configuration
 stty -ixon
