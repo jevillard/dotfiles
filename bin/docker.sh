@@ -14,6 +14,7 @@ explain "Docker installation"
     sudo apt-get install docker-engine
     sudo service docker start
     sudo usermod -a -G docker $USER
+    newgrp docker
 
 explain "Docker compose installation"
     curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
