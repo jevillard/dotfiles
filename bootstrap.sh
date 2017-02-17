@@ -29,18 +29,11 @@ explain "Change permission of files"
 
 explain "Tools applications"
     tell ./$BASEDIR/bin/tools.sh
-    tell ./$BASEDIR/bin/nodejs.sh
     tell ./$BASEDIR/bin/docker.sh
 
 explain "Terminal applications"
     tell ./$BASEDIR/bin/vim.sh
     tell ./$BASEDIR/bin/zsh.sh
-
-explain "Development applications"
-    tell ./$BASEDIR/bin/php.sh
-    tell ./$BASEDIR/bin/mysql.sh
-    tell ./$BASEDIR/bin/composer.sh
-    tell ./$BASEDIR/bin/symfony.sh
 
 explain "Music applications"
     tell ./$BASEDIR/bin/spotify.sh
