@@ -13,4 +13,4 @@ stty -ixon
 # Aliases
 alias ll="ls -alF  --color=auto"
 alias zshconfig="vim ~/.zshrc"
-alias upgrade="sudo apt-get update && sudo apt-get -y -d dist-upgrade && sudo apt-get -y autoclean && sudo apt-get -y autoremove"
+alias upgrade="sudo apt-get update && sudo apt-get -y -d dist-upgrade --force-yes && sudo apt-get -y autoclean && sudo apt-get -y autoremove"
